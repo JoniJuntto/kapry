@@ -17,6 +17,7 @@ const useStyles = makeStyles({
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
         backgroundSize: '200vh',
+        backgroundRepeat: 'no-repeat',
         
     },
     div2: {
@@ -24,6 +25,7 @@ const useStyles = makeStyles({
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
         backgroundSize: '200vh',
+        backgroundRepeat: 'no-repeat',
     },
     test:{
         height: 1500,
