@@ -28,10 +28,10 @@ const useStyles = makeStyles({
         backgroundRepeat: 'no-repeat',
     },
     test:{
-        height: 1500,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        paddingBottom: 100
     },
     header:{
         fontSize: 10,
