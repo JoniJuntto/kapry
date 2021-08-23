@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     h1:{
         color: 'white',
         padding: 20,
+        fontSize: 25
     },
     paper:{
         marginTop:100,
@@ -33,7 +34,7 @@ export default function What(){
             <Typography className={classes.text}>
                 Yhdistyksen tarkoituksena on koota yhteen samanhenkisiä opiskelijoita jakaen
                 tietoa ja taitoa oluen ja muiden käymisteitse valmistettujen juomien panemisesta
-                kansanperinteitä kunnioittaen.
+                kansanperinteitä kunnioittaen. 
             </Typography>
         </Paper>
 
