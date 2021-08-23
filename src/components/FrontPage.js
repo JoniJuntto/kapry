@@ -7,6 +7,7 @@ import How from './How';
 import { Typography } from '@material-ui/core';
 import logo from '../pictures/logo.png';
 import malt from '../pictures/malt.jpg';
+import beer from '../pictures/beer.jpg';
 
 const useStyles = makeStyles({
 
@@ -19,7 +20,7 @@ const useStyles = makeStyles({
         
     },
     div2: {
-        backgroundImage: "url(" + malt + ")",
+        backgroundImage: "url(" + beer + ")",
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
         backgroundSize: '200vh',
