@@ -17,22 +17,6 @@ const useStyles = makeStyles((theme) => ({
 
 
     //Jos mobiililla, laitetaan sinne vain yksi background kuva
-    mobileHelper:{
-        [theme.breakpoints.down('sm')]:{
-            backgroundImage: "url(" + front + ")",
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            backgroundSize: '350vh',
-            backgroundRepeat: 'no-repeat',
-        },
-        [theme.breakpoints.up('md')]:{
-            backgroundImage: "url(" + front + ")",
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            backgroundSize: '350vh',
-            backgroundRepeat: 'no-repeat',
-        },
-    },
     
     div: {
         
@@ -42,7 +26,11 @@ const useStyles = makeStyles((theme) => ({
            
         },
         [theme.breakpoints.up('md')]:{
-          
+            backgroundImage: "url(" + front + ")",
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+            backgroundSize: '200vh',
+            backgroundRepeat: 'no-repeat',
         },
         [theme.breakpoints.up('lg')]: {
             backgroundImage: "url(" + front + ")",
@@ -58,7 +46,11 @@ const useStyles = makeStyles((theme) => ({
            
         },
         [theme.breakpoints.up('md')]:{
-        
+            backgroundImage: "url(" + front + ")",
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+            backgroundSize: '200vh',
+            backgroundRepeat: 'no-repeat',
         },
         [theme.breakpoints.up('lg')]: {
             backgroundImage: "url(" + beer + ")",
@@ -100,7 +92,7 @@ export default function FrontPage(){
     const classes = useStyles();
 
     return(
-        <div className={classes.mobileHelper}>
+        <div>
             <div className={classes.div}>
                 
                 <div className={classes.test}>
