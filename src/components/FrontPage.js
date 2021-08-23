@@ -6,22 +6,29 @@ import When from './When';
 import How from './How';
 import { Typography } from '@material-ui/core';
 import logo from '../pictures/logo.png';
+import malt from '../pictures/malt.jpg';
 
 const useStyles = makeStyles({
+
+    
     div: {
         backgroundImage: "url(" + front + ")",
-        backgroundPosition: 'center 60%',
-        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
         backgroundSize: '200vh',
-        display: 'flex',
-        justifyContent: 'center',
-        minWidth: 320,
-        position: 'relative'
-
+        
+    },
+    div2: {
+        backgroundImage: "url(" + malt + ")",
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        backgroundSize: '200vh',
     },
     test:{
-        height: 3000,
+        height: 1500,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
     header:{
         fontSize: 10
@@ -29,8 +36,13 @@ const useStyles = makeStyles({
     logo:{
         width: 300,
         height: 300
+    },
+    malt:{
+        width: 300,
+        height: 300
     }
   })
+
 
   
 
@@ -39,15 +51,23 @@ export default function FrontPage(){
     const classes = useStyles();
 
     return(
-        <div className={classes.div}>
-            
-            <div className={classes.test}>
-            <div className={classes.header}>
-                <img className={classes.logo} src={logo} alt='logo'></img>
+        <div>
+            <div className={classes.div}>
+                
+                <div className={classes.test}>
+                    <div className={classes.header}>
+                        <img className={classes.logo} src={logo} alt='logo'></img>
+                    </div>
+                    <What />
+                    <When />
+                    
+                </div>
+
             </div>
-                <What />
-                <When />
-                <How />
+            <div className={classes.div2}>
+                <div className={classes.test}>
+            <How />
+            </div>
             </div>
         </div>
     );

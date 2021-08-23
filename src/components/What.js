@@ -14,8 +14,9 @@ const useStyles = makeStyles({
         padding: 20,
     },
     paper:{
-        width: 350,
-        height:350,
+        marginTop:100,
+        width:650,
+        height:450,
         opacity: 0.8,
         backgroundColor:'black',
         
