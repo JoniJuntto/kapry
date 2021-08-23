@@ -4,7 +4,7 @@ import front from '../pictures/front.jpg'
 import What from './What';
 import When from './When';
 import How from './How';
-import { Typography } from '@material-ui/core';
+import { Paper, Typography } from '@material-ui/core';
 import logo from '../pictures/logo.png';
 import malt from '../pictures/malt.jpg';
 import beer from '../pictures/beer.jpg';
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         backgroundImage: "url(" + front + ")",
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
-        backgroundSize: '200vh',
+        backgroundSize: '350vh',
         backgroundRepeat: 'no-repeat',
         
     },
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
         backgroundImage: "url(" + beer + ")",
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
-        backgroundSize: '200vh',
+        backgroundSize: '350vh',
         backgroundRepeat: 'no-repeat',
     },
     test:{
@@ -34,7 +34,11 @@ const useStyles = makeStyles({
         alignItems: 'center',
     },
     header:{
-        fontSize: 10
+        fontSize: 10,
+        backgroundColor:'white',
+        borderRadius: 100,
+        marginTop: 10
+
     },
     logo:{
         width: 300,
@@ -58,9 +62,9 @@ export default function FrontPage(){
             <div className={classes.div}>
                 
                 <div className={classes.test}>
-                    <div className={classes.header}>
+                    <Paper className={classes.header}>
                         <img className={classes.logo} src={logo} alt='logo'></img>
-                    </div>
+                    </Paper>
                     <What />
                     <When />
                     
