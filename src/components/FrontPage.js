@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         backgroundImage: "url(" + front + ")",
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
-        backgroundSize: '350vh',
+        backgroundSize: '150%',
         backgroundRepeat: 'no-repeat',
         
     },
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
         backgroundImage: "url(" + beer + ")",
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
-        backgroundSize: '350vh',
+        backgroundSize: '150%',
         backgroundRepeat: 'no-repeat',
     },
     test:{
