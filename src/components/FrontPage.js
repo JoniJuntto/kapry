@@ -64,7 +64,12 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        paddingBottom: 350,
+        [theme.breakpoints.up('md')]:{
+            paddingBottom: 350,
+        },
+        [theme.breakpoints.up('xl')]:{
+            paddingBottom: 500,
+        }
     },
     
     header:{
@@ -78,10 +83,6 @@ const useStyles = makeStyles((theme) => ({
         width: 300,
         height: 300
     },
-    malt:{
-        width: 300,
-        height: 300
-    }
   }));
 
 
