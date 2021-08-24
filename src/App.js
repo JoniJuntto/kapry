@@ -1,6 +1,7 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import frontpage from './components/FrontPage';
-import formpage from './components/FormPage';
+import Frontpage from './components/FrontPage';
+import Formpage from './components/FormPage';
+import Events from './components/Events';
 
 export default function App(){
 
@@ -9,9 +10,10 @@ export default function App(){
         <div>
           
           <Switch>
-            <Route exact path='/' component={ frontpage }/>
-            <Route path='/form/' component={ formpage }/>
-            <Route component={ frontpage }/>
+            <Route exact path='/' component={ Frontpage }/>
+            <Route path='/form/' component={ Formpage }/>
+            <Route path='/events/' component={ Events }/>
+            <Route component={ Frontpage }/>
           </Switch>
         </div>
       </BrowserRouter>
