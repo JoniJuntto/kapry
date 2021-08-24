@@ -2,8 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import beer from '../pictures/beer.jpg';
 import { Paper, Typography } from '@material-ui/core';
-import { whileStatement } from '@babel/types';
-import logo from '../pictures/logo.png'
+
 
 const useStyles = makeStyles((theme) => ({
     
@@ -17,20 +16,13 @@ const useStyles = makeStyles((theme) => ({
         
     },
     items:{
-        justifyContent: 'center',
         display: 'flex',
-        
+        justifyContent: 'center'
     },
     header:{
         fontSize: 90,
         color: 'white',
         marginTop: 100,
-        position:'fixed'
-        
-    },
-    logo:{
-        width: 200,
-        height: 200
     },
     eventit:{
         marginTop: '30vh',
@@ -40,7 +32,18 @@ const useStyles = makeStyles((theme) => ({
         width: '100vh',
         height: '60vh',
         marginTop: '6vh',
-
+        opacity: 0.8,
+        backgroundColor: 'black',
+        color: 'white',
+        
+    },
+    textHeader:{
+        fontSize: 60,
+        padding: 50
+    },
+    text:{
+        fontSize: 25,
+        padding: 50
     }
     }));
 
@@ -55,18 +58,11 @@ export default function Events(){
                 <Typography className={classes.header}>Events</Typography>
                 <div className={classes.eventit}>
                     <Paper className={classes.event}>
-                        <Typography>
+                        <Typography className={classes.textHeader}>
                             Eventti numero 1.
                         </Typography>
-                    </Paper>
-                    <Paper className={classes.event}>
-                        <Typography>
-                            Eventti numero 2.
-                        </Typography>
-                    </Paper>
-                    <Paper className={classes.event}>
-                        <Typography>
-                            eventti numero 3.
+                        <Typography className={classes.text}>
+                            Leipätekstiä jostain eventistä, milloin se tapahtuu ja mitä siellä tapahtuu ;)
                         </Typography>
                     </Paper>
                 </div>

@@ -3,7 +3,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme)=>({
     text:{
         color:'white',
         opacity:1,
@@ -14,6 +14,9 @@ const useStyles = makeStyles({
         padding: 20,
     },
     paper:{
+        [theme.breakpoints.down('sm')]:{
+            width: '80%'
+        },
         marginTop:100,
         width:'70%',
         height:450,
@@ -21,7 +24,7 @@ const useStyles = makeStyles({
         backgroundColor:'black',
         
     }
-})
+}));
 
 export default function How(){
 

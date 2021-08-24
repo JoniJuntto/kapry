@@ -19,6 +19,14 @@ const useStyles = makeStyles((theme) => ({
     //Jos mobiililla, laitetaan sinne ilman backgroundia
 
     div: {
+        [theme.breakpoints.down('sm')]:{
+            backgroundImage: "url(" + beer + ")",
+            backgroundPosition: 'center',
+            backgroundSize: '300vh',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+        },
+
         [theme.breakpoints.up('md')]: {
             backgroundImage: "url(" + front + ")",
             backgroundPosition: 'center',
@@ -35,6 +43,15 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     div2: {
+
+        [theme.breakpoints.down('sm')]:{
+            backgroundImage: "url(" + beer + ")",
+            backgroundPosition: 'center',
+            backgroundSize: '300vh',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+        },
+
         [theme.breakpoints.up('md')]: {
             backgroundImage: "url(" + front + ")",
             backgroundPosition: 'center',
