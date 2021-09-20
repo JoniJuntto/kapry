@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme)=>({
         color:'white',
         opacity:1,
         margin: 20,
+        fontSize: 20
     },
     h1:{
         color: 'white',
@@ -36,7 +37,11 @@ export default function What(){
             <Typography className={classes.text}>
                 Yhdistyksen tarkoituksena on koota yhteen samanhenkisiä opiskelijoita jakaen
                 tietoa ja taitoa oluen ja muiden käymisteitse valmistettujen juomien panemisesta
-                kansanperinteitä kunnioittaen. 
+                kansanperinteitä kunnioittaen. <br/><br/>
+                Yhdistyksen kaikilla hallituksen jäsenillä on tuntunut jo pitkään pisto sydämessä siitä, 
+                kuinka suomalaiset panevat niin vähän. Paneminen auttaa tuntemaan paremmin sen aineen, jota suuhun laitat,
+                sekä se on selkeästi edullisempaa, kuin kaupasta valmiin ostaminen.
+                Miksi et siis panisi? 
             </Typography>
         </Paper>
 

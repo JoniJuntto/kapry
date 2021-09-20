@@ -5,10 +5,9 @@ import What from './What';
 import When from './When';
 import How from './How';
 import Who from './Who';
-import Footer from './Footer';
-import { Paper } from '@material-ui/core';
-import logo from '../pictures/logo.png';
 import beer from '../pictures/beer.jpg';
+import wine from '../pictures/wine.jpg';
+import beertap from '../pictures/beertap.jpg';
 
 
 
@@ -19,78 +18,103 @@ const useStyles = makeStyles((theme) => ({
     //Jos mobiililla, laitetaan sinne ilman backgroundia
 
     div: {
+
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+
         [theme.breakpoints.down('sm')]:{
-            backgroundImage: "url(" + beer + ")",
-            backgroundPosition: 'center',
-            backgroundSize: '300vh',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
+            backgroundImage: "url(" + front + ")",
+            backgroundSize: '200vh',
         },
 
         [theme.breakpoints.up('md')]: {
             backgroundImage: "url(" + front + ")",
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
             backgroundSize: '200vh',
-            backgroundRepeat: 'no-repeat',
         },
         [theme.breakpoints.up('lg')]: {
             backgroundImage: "url(" + front + ")",
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
             backgroundSize: '200vh',
-            backgroundRepeat: 'no-repeat',
+            padding: '6vh',
         },
     },
+
     div2: {
 
-        [theme.breakpoints.down('sm')]:{
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+
+        [theme.breakpoints.down('sm')]: {
             backgroundImage: "url(" + beer + ")",
-            backgroundPosition: 'center',
             backgroundSize: '300vh',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
         },
 
         [theme.breakpoints.up('md')]: {
-            backgroundImage: "url(" + front + ")",
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
+            backgroundImage: "url(" + beer + ")",
             backgroundSize: '200vh',
-            backgroundRepeat: 'no-repeat',
         },
         [theme.breakpoints.up('lg')]: {
             backgroundImage: "url(" + beer + ")",
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
             backgroundSize: '200vh',
-            backgroundRepeat: 'no-repeat',
+            padding: '6vh',
         },
     },
-    test: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
+
+    div3: {
+
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+
+        [theme.breakpoints.down('sm')]: {
+            backgroundImage: "url(" + wine + ")",
+            backgroundSize: '300vh',
+        },
         [theme.breakpoints.up('md')]: {
-            paddingBottom: 350,
+            backgroundImage: "url(" + wine + ")",
+            backgroundSize: '200vh',
         },
-        [theme.breakpoints.up('xl')]: {
-            paddingBottom: 500,
-        }
+        [theme.breakpoints.up('lg')]: {
+                backgroundImage: "url(" + wine + ")",
+                backgroundSize: '200vh',
+                padding: '6vh',
+        },
     },
 
-    header: {
-        fontSize: 10,
-        backgroundColor: 'white',
-        borderRadius: 100,
-        marginTop: 10
+        div4: {
 
-    },
-    logo: {
-        width: 300,
-        height: 300
-    },
-}));
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+            backgroundPosition: 'center',
+
+            [theme.breakpoints.down('sm')]: {
+                backgroundImage: "url(" + beertap + ")",
+                backgroundSize: '300vh',
+            },
+
+            [theme.breakpoints.up('md')]: {
+                backgroundImage: "url(" + beertap + ")",
+                backgroundSize: '200vh',
+            },
+            [theme.breakpoints.up('lg')]: {
+                backgroundImage: "url(" + beertap + ")",
+                backgroundSize: '200vh',
+                padding: '6vh',
+            },
+        },
+        test: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            [theme.breakpoints.up('md')]: {
+                paddingBottom: 350,
+            },
+            [theme.breakpoints.up('xl')]: {
+                paddingBottom: 500,
+            }
+        },
+    }));
 
 
 
@@ -102,23 +126,26 @@ export default function FrontPage() {
     return (
         <div>
             <div className={classes.div}>
-
                 <div className={classes.test}>
-                    <Paper className={classes.header}>
-                        <img className={classes.logo} src={logo} alt='logo'></img>
-                    </Paper>
                     <What />
-                    <How />
                 </div>
-
             </div>
             <div className={classes.div2}>
                 <div className={classes.test}>
+                    <How />
+                </div>
+            </div>
+            <div className={classes.div3}>
+                <div className={classes.test}>
                     <When />
+                </div>
+            </div>
+            <div className={classes.div4}>
+                <div className={classes.test}>
                     <Who />
                 </div>
             </div>
-            <Footer />
+
         </div>
     );
 }
