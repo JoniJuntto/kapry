@@ -8,7 +8,8 @@ import Who from './Who';
 import beer from '../pictures/beer.jpg';
 import wine from '../pictures/wine.jpg';
 import beertap from '../pictures/beertap.jpg';
-
+import Sidebar from './Sidebar';
+import {Sticky, StickyContainer} from 'react-sticky';
 
 
 
@@ -114,6 +115,9 @@ const useStyles = makeStyles((theme) => ({
                 paddingBottom: 500,
             }
         },
+        Sidebar: {
+            position:'fixed',
+        }
     }));
 
 
@@ -126,6 +130,7 @@ export default function FrontPage() {
     return (
         <div>
             <div className={classes.div}>
+            <Sidebar className={classes.Sidebar}/>
                 <div className={classes.test}>
                     <What />
                 </div>

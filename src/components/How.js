@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme)=>({
         color:'white',
         opacity:1,
         margin: 20,
+        fontSize: 25
     },
     h1:{
         color: 'white',

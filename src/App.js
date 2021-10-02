@@ -14,6 +14,9 @@ export default function App(){
             <Route path='/form/' component={ Formpage }/>
             <Route path='/events/' component={ Events }/>
             <Route component={ Frontpage }/>
+            <Route path='/face' component={() => window.location = 'https://www.facebook.com/groups/kapry'}/>
+            <Route path='/twitter' component={() => window.location = 'https://twitter.com/KAP__ry'}/>
+            <Route path='/instagram' component={() => window.location = 'https://www.facebook.com/groups/kapry'}/>
           </Switch>
         </div>
       </BrowserRouter>
